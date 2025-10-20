@@ -1,0 +1,31 @@
+###
+GET http://localhost:3000/api/bookRepo
+
+###
+GET http://localhost:3000/api/bookRepo/2
+
+###
+POST http://localhost:3000/api/bookRepo
+Content-Type: application/json
+
+{
+    "Author": "Daniel",
+    "Title":"C plus",
+    "year": 2010,
+    "genre":"Classic"
+}
+
+###
+PUT http://localhost:3000/api/bookRepo/4
+Content-Type: application/json
+
+{
+
+    "Author": "Joshua",
+    "title":"sql",
+    "year":2001,
+    "genre":"fantassct"
+}
+
+###
+DELETE http://localhost:3000/api/bookRepo/4
