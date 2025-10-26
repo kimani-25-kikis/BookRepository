@@ -1,18 +1,23 @@
 ###
-GET http://localhost:3000/api/bookRepo
+GET http://localhost:3000/api/bookrepo
 
 ###
-GET http://localhost:3000/api/bookRepo/2
+GET http://localhost:3000/api/bookrepo/2
 
 ###
 POST http://localhost:3000/api/bookRepo
 Content-Type: application/json
 
 {
-    "Author": "Daniel",
-    "Title":"C plus",
-    "year": 2010,
-    "genre":"Classic"
+    "title": "Python",
+    "author": "Alex",
+    "genre":"CLassic",
+    "published_year": 2015,
+    "isbn":876545672200,
+    "price":40.2,
+    "stock_quantity":15
+    
+    
 }
 
 ###
@@ -21,11 +26,14 @@ Content-Type: application/json
 
 {
 
-    "Author": "Joshua",
-    "title":"sql",
-    "year":2001,
-    "genre":"fantassct"
+    "title": "Web development",
+    "author": "peter",
+    "genre":"extravangaza",
+    "published_year": 2010,
+    "isbn":56782200000000,
+    "price":20.2,
+    "stock_quantity":30
 }
 
 ###
-DELETE http://localhost:3000/api/bookRepo/4
+DELETE http://localhost:3000/api/bookRepo/15
